@@ -1,0 +1,101 @@
+.category-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .category-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff7043;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-btn:hover {
+    background-color: #f4511e;
+  }
+  
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .item-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .item-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .item-card h3 {
+    margin: 0.8rem 0 0.4rem;
+    font-size: 1.2rem;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Add to Cart Button Styles */
+  .add-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Button State for Added Items */
+  .add-btn.added {
+    background-color: #ccc;
+    color: #333;
+    cursor: not-allowed;
+  }
+  
+  .add-btn.added:hover {
+    background-color: #ccc; /* Prevent hover effect when already added */
+  }
+  
+  /* Loading Text */
+  .loading {
+    font-style: italic;
+    color: #999;
+    margin-top: 1rem;
+  }
+  

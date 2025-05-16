@@ -1,0 +1,120 @@
+/* src/styles/Register.css */
+
+/* Main form container */
+.auth-form-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.auth-form-container:hover {
+  transform: translateY(-3px);
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dc2626;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #dc2626;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-left: 40px; /* Adjust padding for icons */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #dc2626;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #dc2626;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.auth-button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.auth-button:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-link {
+  background: none;
+  color: #dc2626;
+  border: none;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #b91c1c;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .auth-form-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  .form-title {
+    font-size: 1.5rem;
+  }
+}

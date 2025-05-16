@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Import Google Font (add to HTML head) */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> */
+
+/* About Us Page */
+.about-us-container {
+  background: linear-gradient(135deg, #ffe6d9, #e0f7fa); /* soft peach to aqua */
+  color: #222;
+  padding: 1rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(45deg, #ff6a00, #ee0979); /* warm vibrant */
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/* Content Layout */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-description, .about-team {
+  flex: 1;
+}
+
+/* About Description */
+.about-description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 300;
+}
+
+/* Team Section */
+.about-team {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.team-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.team-member p:last-child {
+  font-style: italic;
+  color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-description, .about-team {
+    margin-bottom: 2rem;
+  }
+
+  .team-img {
+    width: 140px;
+    height: 140px;
+  }
+}
