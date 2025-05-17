@@ -50,7 +50,7 @@ export default function Header() {
     <header className="navbar" data-aos="fade-down">
       <div className="navbar-container">
         <h1 className="logo" data-aos="zoom-in">
-          <Link to="/">🍴 Yum Yard</Link>
+          <Link to="/">🍴 Yum Yard food appss</Link>
         </h1>
 
         <nav className="nav-links" data-aos="fade-up">
