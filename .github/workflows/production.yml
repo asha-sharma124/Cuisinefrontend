@@ -27,4 +27,4 @@ jobs:
          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
          aws-region: ap-south-1
      - name: s3 bucket 
-       run: aws sync build/ s3://cuisinebucketfinal --delete
+       run: aws s3 sync build/ s3://cuisinebucketfinal --delete
